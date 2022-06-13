@@ -1,4 +1,4 @@
-# pl_mnist_example
+# PyTorch Lightning MNIST example
 MNIST example with PyTorch Lightning
 
 # Virtual environment setup
