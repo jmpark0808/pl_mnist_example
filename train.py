@@ -56,6 +56,8 @@ if __name__ == "__main__":
                         default=42, type=int)
     parser.add_argument('--clip_grad_norm', help='Clipping gradient norm, 0 means no clipping', type=float, default=0.)
     parser.add_argument('--pin_memory', help='Whether to utilize pin_memory in dataloader', type=bool, default=True)
+    parser.add_argument('--val_ratio', help='Float between [0, 1] to indicate the percentage of train dataset to validate on', type=float, default=0.2)
+
 
     args = parser.parse_args()
     dict_args = vars(args)
