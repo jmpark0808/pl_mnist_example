@@ -41,8 +41,6 @@ if __name__ == "__main__":
                         help="Directory of pre-trained checkpoint including hyperparams,  \n"
                              "None --> Do not use pre-trained model. Training will start from random initialized model", default=None)
     parser.add_argument('--data_dir', help='Directory of your Dataset', required=True, default=None)
-    parser.add_argument('--cuda', help="'cuda' for cuda, 'cpu' for cpu, default = cuda",
-                        default='cuda', choices=['cuda', 'cpu'])
     parser.add_argument('--gpus', help="Number of gpus to use for training", default=1, type=int)
     parser.add_argument('--batch_size', help="batchsize, default = 1", default=1, type=int)
     parser.add_argument('--epoch', help='# of epochs. default = 20', default=20, type=int)
